@@ -18,10 +18,6 @@ void print_mat(Matrix matrix, int size){
 	}
 }
 
-void transpose(Matrix matrix1, Matrix matrix2, int size){
-	for(int i=0; i<size; i++) for(int j=0; j<size; j++) matrix1[j*size+i] = matrix2[i*size+j];
-}
-
 void matrix_mult_serial(Matrix matrix1, Matrix matrix2, Matrix matrix3, int size){
 	for(int i=0; i<size; i++){
 		for(int j=0; j<size; j++){
